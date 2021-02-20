@@ -6,14 +6,23 @@
         <title>Contact us</title>
         <link href="css/style.css" rel="stylesheet" />
     </head>
+    <header>
+        <nav>
+            <ul>
+                  <li><a href="index.html">Browse recipes</a></li>
+                  <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <body>
             <h1>Contact us</h1>
             <main class="contact">
+                <div class="success"></div>
             <form id="contact-form">
         <div>
             <label>
-                First name (required)
-                <input name"firstName" id="firstName" />
+                Your name (required)
+                <input name"yourname" id="name" />
             </label>
             <div class="form-error" id="nameError">Please enter your name.</div>
         </div>
@@ -39,10 +48,12 @@
             Your address (minimum 25 characters)
             <input name="address" type="address" id="address"/>
             </label>
-            <div class="form-error" id="emailError">Please enter a valid email-address.</div>
+            <div class="form-error" id="addressError">Your address must be at least 25 characters.</div>
          </div>
 
+         <button id="submit">Submit</button>
         </form>
+        </main>
         <script src="js/contact.js"></script>
     </body>
 </html>
