@@ -1,7 +1,7 @@
 const contact = document.querySelector(".success");
 const form = document.querySelector(".contact-form");
-const name = document.querySelector("#name");
-const nameError = document.querySelector("#nameError");
+const firstName = document.querySelector("#firstName");
+const firstNameError = document.querySelector("#firstNameError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const email = document.querySelector("#email");
@@ -13,39 +13,37 @@ const button = document.querySelector("#submit");
 function validateForm(event){
     event.preventDefault();
 
-    if (checkLength(name.value, 1) === true) {
-        nameError.style.display = "none";
+    if (checkLength(firstName.value, 1)) {
+        firstNameError.style.display = "none";
     } else {
-        nameError.style.display = "block";
+        firstNameError.style.display = "block";
     }
 
-    if (checkLength(subject.value, 9) === true) {
+    if (checkLength(subject.value, 9)) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
     }
 
-    if (validateEmail(email.value) === true) {
+    if (validateEmail(email.value)) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
     }
 
-    if (checkLength(address.value, 24) === true) {
+    if (checkLength(address.value, 24)) {
         addressError.style.display = "none";
     } else {
         addressError.style.display = "block";
     }
 
-    if ((checkLength(name.value, 1) === true) 
-    && (checkLength(subject.value, 9) === true) 
-    && (validateEmail(email.value) === true) 
-    && (checkLength(address.value, 24) === true)) {
+    if ((checkLength(firstName.value, 1)) 
+    && (checkLength(subject.value, 9)) 
+    && (validateEmail(email.value)) 
+    && (checkLength(address.value, 24))) {
         contact.innerHTML +=
         `<div class="success">Congrats! Your form has been submitted.</div>`
     }
-
-    console.log("hello");
 }
 
 button.addEventListener("click", validateForm);
