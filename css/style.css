@@ -45,8 +45,7 @@ li a:hover {
 /* Index page */
 
 .grunge-type {
-	display: inline-block, 'Gill Sans', 'Trebuchet MS', sans-serif;
-	font-family: marcelle;
+	font-family: marcelle, 'Gill Sans', 'Trebuchet MS', sans-serif;
 	font-size: 5rem;
 	margin-top: -1.5rem;
 }
