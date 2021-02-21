@@ -8,9 +8,9 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = "https://api.punkapi.com/v2/beers/" + id;
+const url = "https://api.punkapi.com/v2/beers" + id;
 
-async function fetchBeer() {
+/* async function fetchBeer() {
 
     try {
 
@@ -28,6 +28,7 @@ async function fetchBeer() {
     <p>${data.description}</p>
     <p>Goes well with: ${data.food_pairing}</p>
     <p>Brewers tips: ${data.brewers_tips}</p>`;
+
     }
     catch(error) {
         console.log(error);
@@ -37,4 +38,4 @@ async function fetchBeer() {
 
 }
 
-fetchBeer();
+fetchBeer(); */
