@@ -10,7 +10,7 @@ console.log(id);
 
 const url = "https://api.punkapi.com/v2/beers" + id;
 
-/* async function fetchBeer() {
+async function fetchBeer() {
 
     try {
 
@@ -38,4 +38,4 @@ const url = "https://api.punkapi.com/v2/beers" + id;
 
 }
 
-fetchBeer(); */
+fetchBeer();

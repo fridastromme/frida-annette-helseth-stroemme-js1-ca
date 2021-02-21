@@ -35,7 +35,6 @@ async function getBeers() {
 	}
 }
 
-//dobbelsjekk dette dridet
 	catch(error) {
 		beerContainer.innerHTML = `<h1>Ops, something went wrong.</h1>`;
 	
