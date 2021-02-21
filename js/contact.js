@@ -10,7 +10,7 @@ const address = document.querySelector("#address");
 const addressError = document.querySelector("#addressError");
 const button = document.querySelector("#submit");
 
-function validateForm(event){
+function validateForm(event) {
     event.preventDefault();
 
     if (checkLength(firstName.value, 1)) {
@@ -37,12 +37,12 @@ function validateForm(event){
         addressError.style.display = "block";
     }
 
-    if ((checkLength(firstName.value, 1)) 
-    && (checkLength(subject.value, 9)) 
-    && (validateEmail(email.value)) 
-    && (checkLength(address.value, 24))) {
+    if ((checkLength(firstName.value, 1)) &&
+        (checkLength(subject.value, 9)) &&
+        (validateEmail(email.value)) &&
+        (checkLength(address.value, 24))) {
         contact.innerHTML +=
-        `<div class="success">Congrats! Your form has been submitted.</div>`
+            `<div class="success">Congrats! Your form has been submitted.</div>`
     }
 }
 
